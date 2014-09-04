@@ -1,0 +1,15 @@
+camera_test_v4:can open/close preview 800*600 on LCD,with optional parameter buffer count
+camera_test_v5:can set resolution 640*480,800*600
+
+printf("usage: ./camera_test [buffer count]\n"
+                                "win_x     window x\n"
+                                "win_y     window y\n"
+                                "win_w     window width\n"
+                                "win_h     window height\n"
+                                "width    the width image\n"
+                                "height    the height image\n"
+                                "format    1 is to file 0 is to lcd\n"
+                                "device    /dev/videox\n"
+                                "-help     display this information\n");
+
+./test_camera 4 0 0 640 480 640 480 1 /dev/video100
